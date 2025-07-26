@@ -728,3 +728,72 @@ footer {
   line-height: 1.8;
 }
 /* End of Footer */
+
+/* Projects Page */
+section.projects .details {
+  display: flex;
+  flex-direction: column;
+}
+
+section.projects .details .project {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section.projects .details .project:not(:last-of-type) {
+  border-bottom: 2px solid #6C7A27;
+}
+
+section.projects .details .project img {
+  width: 100%;
+}
+
+section.projects .details .project h2 {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  width: fit-content;
+  padding-bottom: 10px;
+}
+
+section.projects .details .project h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #6C7A27;
+}
+
+section.projects .details .project .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.projects .details .project p {
+  line-height: 1.8;
+}
+
+section.projects .details .project span {
+  margin-left: auto;
+}
+
+
+@media (min-width: 768px) {
+  section.projects .details .project {
+    flex-direction: row;
+    align-items: center;
+  }
+  section.projects .details .project .image {
+    flex: 1;
+  }
+  section.projects .details .project .info {
+    flex: 2;
+  }
+}
+/* End of Projects Page */
