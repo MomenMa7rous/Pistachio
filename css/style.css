@@ -213,24 +213,23 @@ header .overlay {
   right: 0;
   width: 100%;
   height: 100%;
-  transform: translateX(100%);
+  /* transform: translateX(100%); */
+  width: 0;
   transition: .4s;
 }
 
 header .overlay.active {
-  transform: translateX(0);
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   header {
     padding: 20px 0;
   }
-
   header .container ul,
   header .container .tel {
     display: flex;
   }
-
   header .container > a.logo,
   header .container > button.menubtn {
     display: none;
