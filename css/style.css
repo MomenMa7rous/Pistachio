@@ -276,6 +276,7 @@ header .overlay {
   height: 100%;
   width: 0;
   transition: .4s;
+  z-index: 10000;
 }
 
 header .overlay.active {
