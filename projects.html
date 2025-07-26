@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,19 +23,19 @@
               <img src="./imgs/logo.png" alt="Pistachio">
             </a>
           </li>
-          <li>
+          <li class="wow fadeInDown">
             <a href="./#">Home</a>
           </li>
-          <li>
+          <li class="wow fadeInDown" data-wow-delay=".1s">
             <a href="./#about">About us</a>
           </li>
-          <li>
+          <li class="wow fadeInDown" data-wow-delay=".2s">
             <a href="./#services">Services</a>
           </li>
-          <li>
-            <a href="./#projects">Projects</a>
+          <li class="wow fadeInDown" data-wow-delay=".3s">
+            <a href="#projects">Projects</a>
           </li>
-          <li>
+          <li class="wow fadeInDown" data-wow-delay=".4s">
             <a href="./#contact">Contact us</a>
           </li>
         </ul>
@@ -80,7 +81,7 @@
     </header>
     <main>
       <div class="container">
-        <div class="social">
+        <div class="social wow fadeIn">
           <p>Follow us</p>
           <hr>
           <a href="https://www.facebook.com/pistachioagency25" target="_blank">
@@ -91,17 +92,17 @@
           </a>
         </div>
         <div class="text">
-          <h1>WE ARE <img src="./imgs/logo.png" alt=""><br>ABSOLUTE CREATIVE</h1>
+          <h1 class="wow fadeInRight">WE ARE <img src="./imgs/logo.png" alt=""><br>ABSOLUTE CREATIVE</h1>
           <div class="actions">
-            <a href="./#services" class="mainbtn">Our Services</a>
-            <a href="#contact" class="mainbtn">Contact Us</a>
+            <a href="./#services" class="mainbtn wow fadeInDown">Our Services</a>
+            <a href="#contact" class="mainbtn wow fadeInDown" data-wow-delay=".1s">Contact Us</a>
           </div>
         </div>
       </div>
     </main>
   </section>
 
-  <section class="projects" id="projects">
+  <section class="projects wow fadeIn" id="projects">
     <img src="./imgs/decorator.svg" alt="" class="decorator decorator1">
     <img src="./imgs/decorator.svg" alt="" class="decorator decorator2">
     <div class="container">
@@ -125,26 +126,26 @@
 
   <section class="contact" id="contact">
     <div class="container">
-      <div class="text">
+      <div class="text wow fadeInLeft">
         <h1 class="main-heading">Contact Us</h1>
         <p>
           Want to elevate your brand and make a real impact online? Whether you're starting fresh or looking to grow, our expert team is here to turn your ideas into results. Let’s create something amazing together — contact us today and take the first step toward success!
         </p>
       </div>
       <ul class="info">
-        <li>
+        <li class="wow fadeInRight">
           <div class="icon">
             <i class="fa-brands fa-facebook-f"></i>
           </div>
           <a href="https://www.facebook.com/pistachioagency25" target="_blank">www.facebook.com/pistachioagency25</a>
         </li>
-        <li>
+        <li class="wow fadeInRight" data-wow-delay=".1s">
           <div class="icon">
             <i class="fa-brands fa-instagram"></i>
           </div>
           <a href="https://www.instagram.com/pistachioagency25" target="_blank">www.instagram.com/pistachioagency25</a>
         </li>
-        <li>
+        <li class="wow fadeInRight" data-wow-delay=".2s">
           <div class="icon">
             <i class="fa-solid fa-phone"></i>
           </div>
@@ -156,10 +157,14 @@
 
   <footer>
     <div class="container">
-      <p>© Copyright 2025 Pistachio, All Rights Reserved</p>
+      <p class="wow fadeIn">© Copyright 2025 Pistachio, All Rights Reserved</p>
     </div>
   </footer>
 
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="./js/main.js"></script>
   <script src="./js/projects.js"></script>
 </body>

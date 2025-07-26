@@ -27,7 +27,7 @@ fetch('https://raw.githubusercontent.com/MomenMa7rous/pistachio-projects/refs/he
     console.log(data);
     data.reverse().slice(0,4).forEach(project => {
       let projectContainer = document.createElement("div")
-      projectContainer.classList.add("project")
+      projectContainer.classList.add("project", "wow", "fadeInUp")
       projectContainer.innerHTML = `<img src="${project.img}" alt="${project.title}">`
       projectsWrapper.appendChild(projectContainer)
     })
