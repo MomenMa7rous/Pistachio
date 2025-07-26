@@ -319,6 +319,12 @@ section.hero .text h1 {
   margin-bottom: 30px;
 }
 
+section.hero .text p {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 section.hero .text h1 img {
   max-width: 34px;
 }
@@ -382,6 +388,9 @@ section.hero .social a:hover {
 @media (min-width: 1024px) {
   section.hero .text h1 {
     font-size: 96px;
+    text-align: left;
+  }
+  section.hero .text p {
     text-align: left;
   }
   section.hero .text h1 img {
