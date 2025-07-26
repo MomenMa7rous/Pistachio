@@ -198,7 +198,7 @@ header .container button.menubtn {
 }
 
 header .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: fit-content;
@@ -246,7 +246,7 @@ header .menu ul li.tel a{
 
 header .overlay {
   background-color: #00000067;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
