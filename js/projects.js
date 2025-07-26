@@ -9,7 +9,7 @@ fetch('https://raw.githubusercontent.com/MomenMa7rous/pistachio-projects/refs/he
     return response.json();
   })
   .then(data => {
-    data.forEach(project => {
+    data.reverse().forEach(project => {
       let projectDetails = document.createElement("div")
       projectDetails.classList.add("project")
       projectDetails.innerHTML = `<div class="image">
