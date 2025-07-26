@@ -487,8 +487,8 @@ section.services .wrapper {
 section.services .wrapper .service {
   padding: 15px;
   padding-top: 50px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   border-bottom: 3px solid #6C7A27;
   background-color: #fff;
   position: relative;
@@ -550,3 +550,71 @@ section.services .wrapper .service p {
   }
 }
 /* End Services Section */
+
+/* Projects Section */
+section.projects h1 {
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 15px;
+  margin-bottom: 65px;
+  font-size: 44px;
+  position: relative;
+}
+
+section.projects h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background-color: #6C7A27;
+}
+
+@media (min-width: 768px) {
+  section.projects h1 {
+    font-size: 64px;
+  }
+}
+
+section.projects .wrapper {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+section.projects .wrapper .project {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  border-radius: 25px;
+}
+
+section.projects .wrapper .project img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section.projects .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  section.projects .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  section.projects .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+section.projects a.mainbtn {
+  margin: auto;
+}
+/* End of Projects Section */
