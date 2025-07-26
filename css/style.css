@@ -446,3 +446,107 @@ section.about .container .text div hr {
   }
 }
 /* End of About Section */
+
+/* Services Section */
+section.services {
+  background-color: #FAFFE3;
+}
+
+section.services h1 {
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: 65px;
+  font-size: 44px;
+  position: relative;
+}
+
+section.services h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background-color: #6C7A27;
+}
+
+@media (min-width: 768px) {
+  section.services h1 {
+    font-size: 64px;
+  }
+}
+
+section.services .wrapper {
+  display: grid;
+  gap: 20px;
+  row-gap: 55px;
+}
+
+section.services .wrapper .service {
+  padding: 15px;
+  padding-top: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom: 3px solid #6C7A27;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 0 4px 0 #00000025;
+}
+
+section.services .wrapper .service .icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  border: 10px solid #FAFFE3;
+  background-color: #6C7A27;
+  box-shadow: 0 4px 4px 0 #0000003a;
+  font-size: 20px;
+}
+
+section.services .wrapper .service h2 {
+  position: relative;
+  font-size: 20px;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+section.services .wrapper .service h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: #6C7A27;
+}
+
+section.services .wrapper .service p {
+  line-height: 1.8;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  section.services .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  section.services .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* End Services Section */
