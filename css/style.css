@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -59,7 +59,7 @@ ul {
 }
 
 section {
-  padding: 50px 0;
+  padding: 70px 0;
   overflow: hidden;
 }
 
@@ -72,11 +72,49 @@ a.mainbtn {
   font-weight: 600;
   transition: .3s;
   border: 2px solid #6C7A27;
+  display: block;
+  width: fit-content;
 }
 
 a.mainbtn:hover {
   background-color: transparent;
   color: #6C7A27;
+}
+
+h1.main-heading {
+  font-size: 44px;
+  font-weight: bold;
+  position: relative;
+  padding: 10px 0;
+  width: fit-content;
+  margin-bottom: 35px;
+}
+
+h1.main-heading:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: #6C7A27;
+}
+
+h1.main-heading:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -15px;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #6C7A27;
+  border-right: 3px solid #6C7A27;
+}
+
+@media (min-width: 768px) {
+  h1.main-heading {
+    font-size: 64px;
+  }
 }
 /* End of Components & Utilities*/
 
@@ -213,7 +251,6 @@ header .overlay {
   right: 0;
   width: 100%;
   height: 100%;
-  /* transform: translateX(100%); */
   width: 0;
   transition: .4s;
 }
@@ -340,3 +377,72 @@ section.hero .social a:hover {
   }
 }
 /* End of Hero Section */
+
+/* About Section */
+section.about .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+
+section.about .container .image {
+  border-radius: 25px;
+  position: relative;
+  z-index: 1000;
+}
+
+section.about .container .image img {
+  width: 100%;
+}
+
+section.about .container .text p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+section.about .container .text div {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+section.about .container .text div hr {
+  flex: 1;
+  border: 1px solid #6C7A27;
+}
+
+@media (min-width: 768px) {
+  section.about .container .image:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    border: 8px solid #6C7A27;
+    border-radius: 25px;
+    width: 80%;
+    height: 80%;
+    z-index: -1;
+  }
+  section.about .container {
+    gap: 50px;
+  }
+  section.about .container .text p {
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.about .container {
+    gap: 80px;
+    flex-direction: row;
+  }
+  section.about .container .image {
+    flex: 1;
+  }
+  section.about .container .text {
+    flex: 2;
+  }
+}
+/* End of About Section */
