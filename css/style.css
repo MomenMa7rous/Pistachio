@@ -618,3 +618,85 @@ section.projects a.mainbtn {
   margin: auto;
 }
 /* End of Projects Section */
+
+/* Contact Section */
+section.contact {
+  background-color: #FAFFE3;
+}
+
+section.contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+section.contact .container .text {
+  flex: 1;
+}
+
+section.contact .container .text p {
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+section.contact .container ul.info {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+}
+
+section.contact .container ul.info li {
+  background-color: #fff;
+  border-radius: 50px;
+  border: 2px solid #6C7A27;
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+section.contact .container ul.info li .icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #6C7A27;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+}
+
+section.contact .container ul.info li a {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  section.contact .container {
+    flex-direction: row;
+    gap: 80px;
+  }
+  section.contact .container > * {
+    flex: 1;
+  }
+  section.contact .container ul.info li {
+    padding: 10px;
+  }
+  section.contact .container ul.info li a {
+    font-size: 16px;
+  }
+}
+/* End of Contact Section */
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #6C7A27;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.8;
+}
+/* End of Footer */
